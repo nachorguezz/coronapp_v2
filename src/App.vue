@@ -1,12 +1,21 @@
 <template>
   <v-app id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <NavBar/>
+    <v-main>
+      <router-view/>
+    </v-main>
+    <Footer/>
   </v-app>
 </template>
+
+<script>
+import Footer from "@/views/Footer";
+import NavBar from "@/views/NavBar";
+
+export default {
+  components: {NavBar, Footer},
+};
+</script>
 
 <style lang="scss">
 #app {

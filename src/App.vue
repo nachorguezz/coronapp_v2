@@ -2,6 +2,7 @@
   <v-app id="app">
     <NavBar/>
     <v-main>
+      <SnackBar/>
       <router-view/>
     </v-main>
     <Footer/>
@@ -11,9 +12,10 @@
 <script>
 import Footer from "@/views/Footer";
 import NavBar from "@/views/NavBar";
+import SnackBar from "@/views/SnackBar";
 
 export default {
-  components: {NavBar, Footer},
+  components: {SnackBar, NavBar, Footer},
 };
 </script>
 
